@@ -4,7 +4,11 @@
 
 ## 💻 프로젝트 소개
 > ### Back & Stock <br>
-> Back & Stock은 과거 10년 치 주식 데이터로 자신의 투자 전략을 실험해 보는 서비스입니다.<br>
+> Back & Stock은 과거 10년 치 주식 데이터로 자신의 투자 전략을 실험해 보는 서비스입니다.
+
+#### 📆 프로젝트 기간 <br>
+
+- 2022/02/25 ~ 2022/04/08
 
 [\[Back&Stock 바로가기\]](https://backandstock.com)
 <br><br>
@@ -65,12 +69,38 @@
 <br>
 
 ## 프론트엔드 기술 스택
-<p>
-<img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<p align="center">
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black">
-<img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=white">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+<img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=react&logoColor=black">
+</br>
+<img src="https://img.shields.io/badge/amazons3-569A31?style=for-the-badge&logo=amazons3&logoColor=white"> 
+<img src="https://img.shields.io/badge/cloudfront-04ACE6?style=for-the-badge&logo=cloudfront&logoColor=white">
+<img src="https://img.shields.io/badge/route53-F7A81B?style=for-the-badge&logo=route53&logoColor=white">
+</br>
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
 </p>
 <br>
 <br>
+
+## 📖 라이브러리
+|Name|Appliance|Version|
+|:---:|:---:|:---:|
+|React-redux|상태관리|7.2.6|
+|React-router-dom|라우터|5.2.0|
+|Axios|HTTP 클라이언트 라이브러리|0.26.0|
+|Redux|상태 관리|4.1.2|
+|Redux-thunk|리덕스 미들웨어|2.4.1|
+|Redux-actions|액션 관리|2.6.5|
+|Immer|불변성 유지|9.0.12|
+|Connected-react-router|히스토리 객체 관리|6.9.2|
+|History|페이지 이동|4.10.1|
+|@nivo/line|라인 차트 라이브러리|0.79.1|
+|@nivo/bar| 차트 라이브러리|0.79.1|
+|React-slick|슬라이드|0.28.1|
+|Dayjs|날짜, 시간 라이브러리|1.11.0|
+|Sweetalert2|Alert 라이브러리|1.4.7|
+|Styled-components|CSS in JS|5.3.3|
