@@ -8,12 +8,18 @@ import { CommunityTitle, CommunityWrap, PageBtn, PageHr, PageWrap, SortCircle, S
 import { actionCreators as communityActions } from '../../redux/modules/community';
 import { CommunityList, Slide } from '../../components';
 
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
+
 const Community = () => {
   const dispatch = useDispatch();
 
   const top_list = useSelector((state) => state.community.top_five_list)
   const community_list = useSelector(state => state.community.list);
   const sort = useSelector(state => state.community.sort_option);
+  const load_complete = useSelector(state => state.community.load_complete);
   
   const [page, setPage] = useState(1);
   const [sort_option, setSortOption] = useState("like");
@@ -72,6 +78,13 @@ const Community = () => {
         {/* <PageHr /> */}
         <PageBtn
           onClick={() => {
+            if(load_complete) {
+              MySwal.fire({
+                title: "더 이상 포트폴리오가 없습니다.",
+                confirmButtonColor: '#0075FF',
+              });
+              return;
+            }
             dispatch(communityActions.getPostDB(false, sort_option));
             setPage(prevState => prevState + 1);
           }}

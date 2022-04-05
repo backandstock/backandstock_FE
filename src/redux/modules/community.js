@@ -35,6 +35,7 @@ const initialState = {
   list: [],
   top_five_list: [],
   sort_option: "like",
+  load_complete: false,
 };
 
 // middlewares
@@ -86,6 +87,7 @@ const getPostDB = (init_check, sort_option) => {
           response.data.length === 0 &&
           !init_check
         ) {
+          dispatch(getPost(false));
           MySwal.fire({
             title: "더 이상 포트폴리오가 없습니다.",
             confirmButtonColor: '#0075FF',
@@ -203,6 +205,11 @@ export default handleActions(
   {
     [GET_POST]: (state, action) =>
       produce(state, (draft) => {
+        if(!action.payload.post_list) {
+          draft.load_complete = !action.payload.post_list;
+          return ;
+        }
+
         draft.list.push(...action.payload.post_list);
         let _new_list = draft.list.reduce((acc, cur) => {
           if (
