@@ -33,6 +33,10 @@ const BestDetail = (props) => {
 
   useEffect(() => {
     dispatch(portActions.getPortOneDB(port_id.id))
+
+    return(() => {
+      dispatch(portActions.setPortOneInit());
+    });
   }, []);
   
   useEffect(() => {

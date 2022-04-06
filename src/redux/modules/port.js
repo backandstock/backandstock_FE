@@ -14,6 +14,7 @@ const SAVE_PORTONE = "SAVE_PORTONE";
 const GET_PORT = "GET_PORT"
 const GET_PORTONE = "GET_PORTONE"
 const DELETE_PORT = "DELETE_PORT"
+const SET_PORTONE_INIT = "GET_PORTONE_INIT"
 
 const SET_BEST = "SET_BEST";
 const SET_COMPARE = "SET_COMPARE";
@@ -28,6 +29,7 @@ const savePortOne = createAction(SAVE_PORTONE, (port_id, result) => ({ port_id, 
 const getPort = createAction(GET_PORT, (port_list) => ({ port_list }));
 const getPortOne = createAction(GET_PORTONE, (port) => ({ port }));
 const deletePort = createAction(DELETE_PORT, (port_idx, port_id) => ({ port_idx, port_id }));
+const setPortOneInit = createAction(SET_PORTONE_INIT, () => ({  }));
 
 const setBest = createAction(SET_BEST, (type, port_id) => ({ type, port_id }));
 const setCompare = createAction(SET_COMPARE, (type, compare_id) => ({ type, compare_id }));
@@ -322,6 +324,10 @@ export default handleActions(
       produce(state, (draft) => {
         draft.port_one = action.payload.port;
       }),
+    [SET_PORTONE_INIT]: (state, action) =>
+      produce(state, (draft) => {
+        draft.port_one = [];
+      }),
     [DELETE_PORT]: (state, action) =>
       produce(state, (draft) => {
         const new_port_list = draft.port_list.filter((p, i) => {
@@ -392,6 +398,7 @@ const actionCreators = {
   getCompareDB,
   setInitCompare,
   changeCommentCnt,
+  setPortOneInit,
 };
 
 export { actionCreators };

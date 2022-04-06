@@ -15,6 +15,10 @@ const Detail = () => {
 
   useEffect(() => {
     dispatch(portActions.getPortOneDB(port_id.id))
+
+    return(() => {
+      dispatch(portActions.setPortOneInit());
+    });
   }, [])
 
   return (
