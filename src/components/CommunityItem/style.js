@@ -23,6 +23,7 @@ export const LikeBtn = styled.img`
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 1000;
 `;
 
 export const ItemTop = styled.div`
