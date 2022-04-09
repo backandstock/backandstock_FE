@@ -104,3 +104,21 @@
 |Dayjs|날짜, 시간 라이브러리|1.11.0|
 |Sweetalert2|Alert 라이브러리|1.4.7|
 |Styled-components|CSS in JS|5.3.3|
+
+## 🔨 API 설계   
+
+#### [API link](https://www.notion.so/e72d3d2dc8d04e0380a27a4ea022571f?v=16e46006276e41f8a48c3e398d52fd57) 
+<details>
+<summary>API</summary>
+<div markdown="1">       
+
+![image](https://user-images.githubusercontent.com/44867889/161730521-4802d772-d004-4701-867c-c2a12bb776bb.png)   
+
+![image](https://user-images.githubusercontent.com/44867889/161730578-bcf3139a-d94f-4614-8c82-5e5e2f445ed8.png)
+
+</div>
+</details>
+
+## 📖 서비스 아키텍쳐
+
+![image](https://user-images.githubusercontent.com/44867889/162220038-0b32b522-6d07-43f5-ae7c-e562669cb1bb.png)
